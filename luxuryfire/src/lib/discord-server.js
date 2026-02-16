@@ -13,6 +13,9 @@ export function getStats() {
   if (!client) return { servers: 0, members: 0 };
   const servers = client.guilds.cache.size;
   let members = 0;
-  client.guilds.cache.forEach(g => (members += g.memberCount));
+  client.guilds.cache.forEach((g) => (members += g.memberCount));
   return { servers, members };
 }
+
+// Forza server-only per Next.js
+export const dynamic = 'force-dynamic';

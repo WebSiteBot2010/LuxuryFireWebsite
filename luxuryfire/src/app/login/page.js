@@ -1,15 +1,15 @@
-export default function Login() {
-  const url = `https://discord.com/api/oauth2/authorize?client_id=${process.env.DISCORD_CLIENT_ID}&redirect_uri=${process.env.DISCORD_REDIRECT_URI}&response_type=code&scope=identify guilds`;
+'use client';
 
+export default function Login() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 text-white">
-      <h1 className="text-4xl mb-6">Accedi a LuxuryFire</h1>
+    <main className="p-10">
+      <h1 className="text-3xl font-bold mb-6">Login</h1>
       <a
-        href={url}
-        className="bg-red-500 px-6 py-3 rounded-lg font-bold hover:bg-red-600"
+        href="/api/auth/discord"
+        className="bg-blue-500 px-6 py-3 rounded text-white hover:bg-blue-600"
       >
-        Login con Discord
+        Accedi con Discord
       </a>
-    </div>
+    </main>
   );
 }

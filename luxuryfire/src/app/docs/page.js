@@ -1,8 +1,8 @@
-export default function Tos() {
+export default function Docs() {
   return (
-    <div className="p-10 bg-slate-900 min-h-screen text-white">
-      <h1 className="text-4xl mb-4">Terms of Service</h1>
-      <p>Utilizzando LuxuryFire accetti i termini.</p>
-    </div>
+    <main className="p-10">
+      <h1 className="text-3xl font-bold mb-6">Documentazione</h1>
+      <p>Qui puoi inserire privacy policy, guide e moduli.</p>
+    </main>
   );
 }
