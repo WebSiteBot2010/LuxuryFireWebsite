@@ -1,4 +1,4 @@
-// SOLO SERVER
+// src/lib/discord-server.js
 import { Client, GatewayIntentBits } from "discord.js";
 
 let client;

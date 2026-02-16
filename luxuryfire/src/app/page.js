@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -13,27 +12,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="p-10">
-      <h1 className="text-4xl font-bold mb-6">LuxuryFire</h1>
-
-      <div className="flex gap-10">
-        <div className="bg-gray-800 p-6 rounded text-center">
-          <p className="text-2xl font-bold">{stats.servers}</p>
-          <p>Server Attivi</p>
-        </div>
-
-        <div className="bg-gray-800 p-6 rounded text-center">
-          <p className="text-2xl font-bold">{stats.members}</p>
-          <p>Membri Protetti</p>
-        </div>
-      </div>
-
-      <a
-        href="/login"
-        className="mt-10 inline-block bg-red-500 px-6 py-3 rounded text-white font-bold hover:bg-red-600"
-      >
-        Accedi con Discord
-      </a>
-    </main>
+    <div>
+      <h1>LuxuryFire</h1>
+      <p>Server: {stats.servers}</p>
+      <p>Membri: {stats.members}</p>
+    </div>
   );
 }
