@@ -1,3 +1,4 @@
+// SOLO SERVER
 import { Client, GatewayIntentBits } from "discord.js";
 
 let client;
@@ -17,5 +18,5 @@ export function getStats() {
   return { servers, members };
 }
 
-// Forza server-only per Next.js
-export const dynamic = 'force-dynamic';
+// Next.js: forziamo server-only
+export const dynamic = "force-dynamic";
