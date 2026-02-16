@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
-import { getBotStats } from "@/lib/discord";
+import { initBot, getStats } from "@/lib/discord";
 
 export async function GET() {
-  const stats = await getBotStats();
+  initBot();
+  const stats = getStats();
   return NextResponse.json(stats);
 }
